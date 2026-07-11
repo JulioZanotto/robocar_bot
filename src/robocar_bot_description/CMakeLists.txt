@@ -13,10 +13,12 @@ find_package(urdf REQUIRED)
 # Install
 ################################################################################
 install(DIRECTORY 
+  config
   launch
   meshes 
   rviz 
   urdf
+  worlds
   DESTINATION share/${PROJECT_NAME}
 )
 

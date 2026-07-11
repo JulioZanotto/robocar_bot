@@ -12,7 +12,7 @@ def generate_launch_description():
     
     # 2. Buscar o arquivo Xacro/URDF principal do robô
     # NOTA: Ajuste o nome abaixo para o arquivo real que você copiou (ex: turtlebot3_burger.urdf.xacro)
-    xacro_file = os.path.join(get_package_share_directory(pkg_name), 'urdf', 'turtlebot3_burger.urdf')
+    xacro_file = os.path.join(get_package_share_directory(pkg_name), 'urdf', 'robocar_bot.urdf')
     
     # Processar o arquivo xacro para converter em string URDF pura
     robot_description_raw = xacro.process_file(xacro_file).toxml()
@@ -40,8 +40,8 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         output='screen',
-        # O argumento abaixo faz o RViz iniciar sem nenhuma config, limpo
-        arguments=[]
+        # Carregar o rviz da pasta rviz do pacote, que já vem com a configuração de visualização do robô
+        arguments=['-d', os.path.join(get_package_share_directory(pkg_name), 'rviz', 'robocar_bot_viz.rviz')]
     )
 
     return LaunchDescription([
