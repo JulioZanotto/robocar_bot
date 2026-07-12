@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="traffic_light">
+    <static>true</static>
+    
+    <link name="base_link">
+      
+      <visual name="pole_visual">
+        <pose>0 0 0.3 0 0 0</pose> <geometry><cylinder><radius>0.01</radius><length>0.6</length></cylinder></geometry> <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material>
+      </visual>
+
+      <visual name="arm_visual">
+        <pose>0 -0.25 0.55 1.5707 0 0</pose> <geometry><cylinder><radius>0.008</radius><length>0.5</length></cylinder></geometry> <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material>
+      </visual>
+
+
+      <visual name="head1_body">
+        <pose>0.015 0 0.3 0 0 0</pose> <geometry><box><size>0.03 0.03 0.11</size></box></geometry> <material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material>
+      </visual>
+
+      <visual name="head1_visor_red"><pose>0.032 0 0.348 0 0.15 0</pose><geometry><box><size>0.015 0.026 0.002</size></box></geometry><material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material></visual>
+      <visual name="head1_visor_yellow"><pose>0.032 0 0.313 0 0.15 0</pose><geometry><box><size>0.015 0.026 0.002</size></box></geometry><material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material></visual>
+      <visual name="head1_visor_green"><pose>0.032 0 0.278 0 0.15 0</pose><geometry><box><size>0.015 0.026 0.002</size></box></geometry><material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material></visual>
+
+      <visual name="head1_red_visual_off"><pose>0.03 0 0.335 0 0 0</pose><geometry><sphere><radius>0.012</radius></sphere></geometry><material><ambient>0.2 0 0 1</ambient><diffuse>0.2 0 0 1</diffuse></material></visual>
+      <visual name="head1_red_visual_on"><pose>0.0305 0 0.335 0 0 0</pose><geometry><sphere><radius>0.0122</radius></sphere></geometry><material><ambient>1 0.2 0.2 1</ambient><diffuse>1 0 0 1</diffuse><emissive>1 0 0 1</emissive></material></visual>
+
+      <visual name="head1_yellow_visual_off"><pose>0.03 0 0.3 0 0 0</pose><geometry><sphere><radius>0.012</radius></sphere></geometry><material><ambient>0.2 0.2 0 1</ambient><diffuse>0.2 0.2 0 1</diffuse></material></visual>
+      <visual name="head1_yellow_visual_on"><pose>0.015 0 0.3 0 0 0</pose><geometry><sphere><radius>0.0122</radius></sphere></geometry><material><ambient>1 1 0.2 1</ambient><diffuse>1 1 0 1</diffuse><emissive>1 1 0 1</emissive></material></visual>
+
+      <visual name="head1_green_visual_off"><pose>0.03 0 0.265 0 0 0</pose><geometry><sphere><radius>0.012</radius></sphere></geometry><material><ambient>0 0.2 0 1</ambient><diffuse>0 0.2 0 1</diffuse></material></visual>
+      <visual name="head1_green_visual_on"><pose>0.015 0 0.265 0 0 0</pose><geometry><sphere><radius>0.0122</radius></sphere></geometry><material><ambient>0.2 1 0.2 1</ambient><diffuse>0 1 0 1</diffuse><emissive>0 1 0 1</emissive></material></visual>
+
+
+      <visual name="head2_body">
+        <pose>0.015 -0.45 0.55 0 0 0</pose> <geometry><box><size>0.03 0.03 0.11</size></box></geometry>
+        <material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material>
+      </visual>
+
+      <visual name="head2_visor_red"><pose>0.032 -0.45 0.598 0 0.15 0</pose><geometry><box><size>0.015 0.026 0.002</size></box></geometry><material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material></visual>
+      <visual name="head2_visor_yellow"><pose>0.032 -0.45 0.563 0 0.15 0</pose><geometry><box><size>0.015 0.026 0.002</size></box></geometry><material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material></visual>
+      <visual name="head2_visor_green"><pose>0.032 -0.45 0.528 0 0.15 0</pose><geometry><box><size>0.015 0.026 0.002</size></box></geometry><material><ambient>0.05 0.05 0.05 1</ambient><diffuse>0.05 0.05 0.05 1</diffuse></material></visual>
+
+      <visual name="head2_red_visual_off"><pose>0.03 -0.45 0.585 0 0 0</pose><geometry><sphere><radius>0.012</radius></sphere></geometry><material><ambient>0.2 0 0 1</ambient><diffuse>0.2 0 0 1</diffuse></material></visual>
+      <visual name="head2_red_visual_on"><pose>0.0305 -0.45 0.585 0 0 0</pose><geometry><sphere><radius>0.0122</radius></sphere></geometry><material><ambient>1 0.2 0.2 1</ambient><diffuse>1 0 0 1</diffuse><emissive>1 0 0 1</emissive></material></visual>
+
+      <visual name="head2_yellow_visual_off"><pose>0.03 -0.45 0.55 0 0 0</pose><geometry><sphere><radius>0.012</radius></sphere></geometry><material><ambient>0.2 0.2 0 1</ambient><diffuse>0.2 0.2 0 1</diffuse></material></visual>
+      <visual name="head2_yellow_visual_on"><pose>0.015 -0.45 0.55 0 0 0</pose><geometry><sphere><radius>0.0122</radius></sphere></geometry><material><ambient>1 1 0.2 1</ambient><diffuse>1 1 0 1</diffuse><emissive>1 1 0 1</emissive></material></visual>
+
+      <visual name="head2_green_visual_off"><pose>0.03 -0.45 0.515 0 0 0</pose><geometry><sphere><radius>0.012</radius></sphere></geometry><material><ambient>0 0.2 0 1</ambient><diffuse>0 0.2 0 1</diffuse></material></visual>
+      <visual name="head2_green_visual_on"><pose>0.015 -0.45 0.515 0 0 0</pose><geometry><sphere><radius>0.0122</radius></sphere></geometry><material><ambient>0.2 1 0.2 1</ambient><diffuse>0 1 0 1</diffuse><emissive>0 1 0 1</emissive></material></visual>
+
+    </link>
+
+    <plugin filename="libtraffic_light_plugin.so" name="traffic_light_sim::TrafficLightPlugin"/>
+  </model>
+</sdf>

@@ -1,0 +1,48 @@
+# Blender 5.0.0 MTL File: 'robocar_master_noarray.blend'
+# www.blender.org
+
+newmtl amarelo
+Kd 0.688607 0.671431 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+
+newmtl asfalto
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd Asphalt025C_4K-JPG_Color.jpg
+map_Pr Asphalt025C_4K-JPG_Roughness.jpg
+map_Bump -bm 1.000000 Asphalt025C_4K-JPG_NormalGL.jpg
+
+newmtl branco
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
